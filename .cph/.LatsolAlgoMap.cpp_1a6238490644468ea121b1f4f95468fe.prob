@@ -1,0 +1,1 @@
+{"name":"Local: LatsolAlgoMap","url":"g:\\COPVY\\Latihan Lomba UI\\LatsolAlgoMap.cpp","tests":[{"id":1751944111680,"input":"10\n2 3 2 3 2 5 3 3 5 5\n4\n2\n3\n4\n5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\COPVY\\Latihan Lomba UI\\LatsolAlgoMap.cpp","group":"local","local":true}
