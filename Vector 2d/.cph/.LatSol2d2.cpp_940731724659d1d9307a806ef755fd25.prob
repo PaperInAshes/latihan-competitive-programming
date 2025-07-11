@@ -1,0 +1,1 @@
+{"name":"Local: LatSol2d2","url":"g:\\COPVY\\Latihan Lomba UI\\Vector 2d\\LatSol2d2.cpp","tests":[{"id":1752218102894,"input":"4 4\n123 34 2 1\n234 2342 53221 34\n2847 2345 12 3442\n1 1 1 999","output":"4\n5\n9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\COPVY\\Latihan Lomba UI\\Vector 2d\\LatSol2d2.cpp","group":"local","local":true}
