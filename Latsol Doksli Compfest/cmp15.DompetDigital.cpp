@@ -14,25 +14,26 @@ int main(){
             }
         }
     int oprasi = M-K+1; 
-    long long total = 0; // Karena angka bisa besar
+    long long dompet = 0; 
+    int terbesar = INT_MIN, L = -1, R = -1;
 
-        for (int i = 0; i < oprasi; i++) {
-            int maks = 0, baris_terpilih = -1, kolom_terpilih = -1;
-
-        for (int r = 0; r < N; r++) {
-            for (int j = i; j < i + K; j++) {
-                if (matrix[r][j] > maks) {
-                    maks = matrix[r][j];
-                    baris_terpilih = r;
-                    kolom_terpilih = j;
-                }
+    
+    for (int i = 0; i < oprasi; i++){
+        int terbesar = INT_MIN, L = -1, R = -1;
+        for (int j = i; j < K+i; j++){
+            for (int k = 0; k < N; k++){
+                if (terbesar<matrix[k][j]){
+                    terbesar = matrix[k][j];
+                    L=k;
+                    R=j;
+                } 
             }
         }
+        if (L != -1 && R != -1) {
+            dompet += terbesar;
+            matrix[L][R] = INT_MIN;
+        }
+    }
 
-    total += maks;
-    if (baris_terpilih != -1) matrix[baris_terpilih][kolom_terpilih] = 0;
-}
-
-cout << total << '\n';
-
+    cout << dompet;
 }
